@@ -1,0 +1,16 @@
+# This is a comment explaining the purpose of this block
+# It specifies a redirect configuration.
+
+[[redirects]]
+
+# This line specifies the source or "from" path to match.
+# In this case, it matches any path using the "/*" wildcard.
+from = "/*"
+
+# This line specifies the target or "to" path where the redirect will send requests.
+# Here, it redirects all matched requests to "/index.html".
+to = "/index.html"
+
+# This line sets the HTTP status code for the redirect response.
+# A status code of 200 means "OK," indicating a successful redirect.
+status = 200

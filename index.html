@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texas 9</title>
+    <!-- Preconnect to external font resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Include fonts from Google Fonts and other sources -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Zilla+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/69dbc1186412d7831b88d8a78a360360?family=DIN+Condensed+Web"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Container for the application -->
+    <div id="root"></div>
+    <!-- Include the main JavaScript module -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Chronogolf Booking Widget -->
+    <script>
+      !(function (d, i) {
+        if (!d.getElementById(i)) {
+          var s = d.createElement("script");
+          (s.id = i), (s.src = "https://cdn2.chronogolf.com/widgets/v2");
+          var r = d.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(s, r);
+        }
+      })(document, "chronogolf-js");
+    </script>
+    <!-- Container for the Chronogolf booking button -->
+    <div class="chrono-bookingbutton" id="t-sheet-widget"></div>
+    <!-- Configure Chronogolf settings and theme (optional) -->
+    <script>
+      window.chronogolfSettings = {
+        clubId: "19225",
+        locale: "en-US",
+      };
+      // Optional: Customize the Chronogolf theme color
+      window.chronogolfTheme = {
+        color: "#7da33f",
+      };
+    </script>
+    <!-- Include the Chronogolf JavaScript widget again (duplicate code) -->
+    <script>
+      !(function (d, i) {
+        if (!d.getElementById(i)) {
+          var s = d.createElement("script");
+          (s.id = i), (s.src = "https://cdn2.chronogolf.com/widgets/v2");
+          var r = d.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(s, r);
+        }
+      })(document, "chronogolf-js");
+    </script>
+    <!-- Google Analytics (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TRG6NLKW3N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      // Initialize and configure Google Analytics
+      gtag("config", "G-TRG6NLKW3N");
+    </script>
+  </body>
+</html>
+
+
